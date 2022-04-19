@@ -1,0 +1,30 @@
+import java.util.Scanner;
+public class Main
+{
+  public static void main (String[]args)
+  {
+   int x = 0;
+   int y = 0;
+   Scanner sc = new Scanner (System.in);
+   System.out.println("Insira dois números");
+   x = sc.nextInt();
+   y = sc.nextInt();
+   System.out.println("Você inseriu " + x + " e " + y);
+   sc.close();
+   
+    if (x == 0 && y == 0)
+      System.out.println("está na origem");
+    
+    else if (x>0 && y>0)
+        System.out.println("está no Q1");
+
+    else if (x>0 && y<0) 
+        System.out.println("está no Q4");
+
+    else if (x<0 && y>0) 
+        System.out.println("está no Q2");
+
+    else if (x<0 && y<0) 
+        System.out.println("está no Q3");
+  }
+}
